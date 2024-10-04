@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jal Mitra - Groundwater Information Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="http://www.culturalindia.net/iliimages/National-Emblem-1.jpg" alt="Emblem" class="emblem">
+                <div>
+                    <h1>DEPARTMENT OF WATER RESOURCES, RD & GR</h1>
+                    <p>MINISTRY OF JAL SHAKTI, GOVERNMENT OF INDIA</p>
+                </div>
+            </div>
+            <div class="language-buttons">
+                <button class="active">ENGLISH</button>
+                <button>हिंदी</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Groundwater Resources</a></li>
+                <li><a href="#">Water Quality</a></li>
+                <li><a href="#">Reports & Data</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="banner">
+            <h2>JAL MITRA</h2>
+            <h3>Your AI Assistant for Groundwater Information</h3>
+        </div>
+
+        <div class="news-ticker">
+            <h3>Latest Updates</h3>
+            <!-- Add latest groundwater-related news here -->
+        </div>
+
+        <div class="content-grid">
+            <div class="about">
+                <h3>About Jal Mitra</h3>
+                <p>Jal Mitra is an AI-powered chatbot designed to provide comprehensive information on groundwater resources in India. It offers insights on water level scenarios, hydrogeological information, water quality, and more.</p>
+            </div>
+            <div class="whats-new">
+                <h3>What's New</h3>
+                <ul>
+                    <li>Latest Groundwater Assessment Report 2024</li>
+                    <li>New Guidelines for NOC Applications</li>
+                    <li>Upcoming Webinar on Sustainable Groundwater Management</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>© 2024 Department of Water Resources, RD & GR, Government of India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="chat-button">
+        <img src="https://www.pngmart.com/files/16/Vector-Lawyer-Transparent-PNG.png" alt="Chat Icon">
+    </button>
+
+    <div id="chat-container">
+        <div id="chat-header">
+            <button id="back-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            JAL MITRA
+        </div>
+        <div id="chatbox"></div>
+        <div id="user-input">
+            <input type="text" id="user-message" placeholder="Type your question here...">
+            <button id="send-button">Send</button>
+            <button id="voice-button">🎤</button>
+            <button id="terminate-button" style="display:none;">Terminate</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
